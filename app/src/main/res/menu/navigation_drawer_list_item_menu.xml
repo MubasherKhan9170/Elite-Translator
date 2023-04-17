@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+
+ <!--       <item android:id="@+id/main_fragment_id"
+            android:title="Main"
+            android:visible="false"/>
+        <item
+            android:id="@+id/pdf_ad_fragment_id"
+            android:icon="@drawable/ic_pdf_ad_icon"
+            android:title="PDF Reader (Ad)" />
+        <item
+            android:id="@+id/Doc_ad_fragment_id"
+            android:icon="@drawable/ic_doc_d_icon"
+            android:title="Doc Scanner (Ad)" />-->
+
+        <item
+            android:id="@+id/change_app_lang_id"
+            android:icon="@drawable/ic_app_lang_icon"
+            android:title="@string/menu_item_lang_setting" />
+
+        <item
+            android:id="@+id/remove_ad_id"
+            android:icon="@drawable/ic_remove_ad_icon"
+            android:title="@string/menu_item_remove_ad" />
+        <item
+            android:id="@+id/favourite_fragment_id"
+            android:icon="@drawable/ic_favorite_tab_icon"
+            android:title="@string/menu_item_favourite"/>
+
+        <item
+            android:id="@+id/history_fragment_id"
+            android:icon="@drawable/ic_history_d_icon"
+            android:title="@string/menu_item_history" />
+        <item
+            android:id="@+id/feedback_fragment_id"
+            android:icon="@drawable/ic_feedback_d_icon"
+            android:title="@string/menu_item_feedback" />
+        <item
+            android:id="@+id/rate_fragment_id"
+            android:icon="@drawable/ic_rate_d_icon"
+            android:title="@string/menu_item_rate" />
+
+        <item
+            android:id="@+id/share_fragment_id"
+            android:icon="@drawable/ic_share_d_icon"
+            android:title="@string/menu_item_share" />
+        <item
+            android:id="@+id/privacy_policy_fragment_id"
+            android:icon="@drawable/ic_privacy_d_icon"
+            android:title="@string/menu_item_privacy_policy" />
+
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/quit_app_fragment_id"
+            android:icon="@drawable/ic_quit_d_icon"
+            android:title="@string/menu_item_quit_app" />
+    </group>
+
+</menu>

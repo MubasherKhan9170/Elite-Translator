@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="bottomViewVariable"
+            type="com.translate.translator.voice.translation.dictionary.all.language.viewmodels.TranslatorMainViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_sheet_container_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/black_background_text"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <ImageView
+            android:id="@+id/bottom_sheet_move_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_bottom_sheet_swipe_up_icon" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bottom_sheet_first_person_lang_id"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/roboto"
+            android:includeFontPadding="true"
+            android:lines="1"
+            android:text="Spanish"
+            android:textColor="?attr/colorOnPrimary"
+            app:icon="@drawable/ic_voice_black_icon"
+            app:iconGravity="start"
+            app:iconPadding="@dimen/spacing_normal"
+            app:layout_constraintBottom_toBottomOf="@+id/bottom_sheet_second_person_lang_id"
+            app:layout_constraintEnd_toStartOf="@+id/bottom_sheet_second_person_lang_id"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_move_icon" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bottom_sheet_second_person_lang_id"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/roboto"
+            android:includeFontPadding="true"
+            android:text="English"
+            android:textColor="?attr/colorOnPrimary"
+            android:lines="1"
+            app:icon="@drawable/ic_voice_black_icon"
+            app:iconPadding="@dimen/spacing_normal"
+            app:layout_constraintBaseline_toBaselineOf="@+id/bottom_sheet_first_person_lang_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/bottom_sheet_first_person_lang_id" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bottom_sheet_recycler_view_id"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_first_person_lang_id" />
+
+        <!--<include
+            android:id="@+id/list_item"
+            layout="@layout/layout_language_list_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button5" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

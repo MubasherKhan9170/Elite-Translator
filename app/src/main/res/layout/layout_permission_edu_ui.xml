@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_pre_edu_parent_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:backgroundTint="@android:color/transparent"
+    android:layout_margin="@dimen/spacing_normal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/layout_permission_up_background_id"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="?attr/colorPrimary"
+            app:layout_constraintBottom_toTopOf="@+id/layout_permission_down_background_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="1" />
+
+        <View
+            android:id="@+id/layout_permission_down_background_id"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#444444"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_permission_up_background_id"
+            app:layout_constraintVertical_weight="1" />
+
+        <ImageView
+            android:id="@+id/layout_permission_icon_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/layout_permission_up_background_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/layout_permission_up_background_id"
+            tools:src="@drawable/ic_camera_premission_icon" />
+
+        <TextView
+            android:id="@+id/layout_permission_message_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            tools:text="To capture photos and videos, allow Elite Translator access to your camera."
+            android:textColor="@color/secondaryTextColor"
+            android:textDirection="ltr"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_permission_up_background_id"
+            app:layout_constraintVertical_bias="0.24000001" />
+
+        <TextView
+            android:id="@+id/layout_permission_cancel_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/premission_dialog_cancel_button"
+            android:textColor="@color/primaryColor"
+            app:layout_constraintBottom_toBottomOf="@+id/layout_permission_down_background_id"
+            app:layout_constraintEnd_toStartOf="@+id/layout_permission_ok_button_id"
+            app:layout_constraintStart_toStartOf="@+id/layout_permission_icon_id"
+            app:layout_constraintTop_toBottomOf="@+id/layout_permission_message_id"
+            app:layout_constraintVertical_bias="0.24000001" />
+
+        <TextView
+            android:id="@+id/layout_permission_ok_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/premission_dialog_continue_button"
+            android:textColor="@color/primaryColor"
+            app:layout_constraintBottom_toBottomOf="@+id/layout_permission_cancel_button_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/layout_permission_cancel_button_id"
+            app:layout_constraintTop_toTopOf="@+id/layout_permission_cancel_button_id" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

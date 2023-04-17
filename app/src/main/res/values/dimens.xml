@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_normal">16dp</dimen>
+    <dimen name="element_margin_normal">16dp</dimen>
+    <dimen name="element_padding_normal">16dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="button_stroke_width">2dp</dimen>
+    <dimen name="dialog_margin">20dp</dimen>
+
+    <dimen name="font_size">12sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

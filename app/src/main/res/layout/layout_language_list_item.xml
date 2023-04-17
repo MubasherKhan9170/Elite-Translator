@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="language"
+            type="com.translate.translator.voice.translation.dictionary.all.language.data.LanguageItem" />
+        <variable
+            name="dataSource"
+            type="androidx.lifecycle.ViewModel" />
+        <variable
+            name="clickListener"
+            type="com.translate.translator.voice.translation.dictionary.all.language.adapters.SleepNightListener" />
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> clickListener.onClick(language)}">
+
+        <TextView
+            android:id="@+id/header_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/primaryColor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="A"
+            android:visibility="gone"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/lang_item_card_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:backgroundTint="@color/secondaryTextColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header_id">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/layout_item_lang_en_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/element_margin_normal"
+                    android:layout_marginTop="@dimen/element_margin_normal"
+                    android:textAlignment="gravity"
+                    android:textColor="#404040"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@id/barrier4"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="English"
+                    app:langNameEN="@{language}"/>
+
+                <TextView
+                    android:id="@+id/layout_item_lang_local_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="@dimen/element_margin_normal"
+                    android:textAlignment="gravity"
+                    android:textColor="#808080"
+                    android:textDirection="anyRtl"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/layout_item_sound_play_icon_id"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/layout_item_lang_en_id"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_item_lang_en_id"
+                    tools:text="انگریزی"
+                    app:langNameLocal="@{language}"/>
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:id="@+id/barrier4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:barrierDirection="right"
+                    app:constraint_referenced_ids="layout_item_lang_en_id,layout_item_lang_local_id, layout_item_sound_play_icon_id"
+                    tools:layout_editor_absoluteX="16dp" />
+
+                <ImageView
+                    android:id="@+id/layout_item_country_flag_id"
+                    android:layout_width="32dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/layout_item_checked_id"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@drawable/ic_bangladesh"
+                    app:flagIcon="@{language}"/>
+
+                <ImageView
+                    android:id="@+id/layout_item_checked_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="TODO"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/ic_circle_unselection_icon"
+                    app:selectionIcon= "@{language}"
+                    app:type= "@{dataSource}" />
+
+                <ImageView
+                    android:id="@+id/layout_item_sound_play_icon_id"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/layout_item_lang_local_id"
+                    app:layout_constraintEnd_toStartOf="@id/barrier4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/layout_item_lang_local_id"
+                    app:layout_constraintTop_toTopOf="@+id/layout_item_lang_local_id"
+                    app:srcCompat="@drawable/ic_voice_white_icon"
+                    app:tint="@color/primaryColor" />
+
+                <TextView
+                    android:id="@+id/layout_item_country_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/secondaryLightColor"
+                    android:textSize="14sp"
+                    android:visibility="@{language.countryName.equals(`null`) ? View.GONE: View.VISIBLE}"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView7"
+                    app:layout_constraintStart_toEndOf="@+id/textView7"
+                    app:layout_constraintTop_toTopOf="@+id/textView7"
+                    tools:text="United Kingdom"
+                    app:countryName="@{language}"/>
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" - "
+                    android:visibility="@{language.countryName.equals(`null`) ? View.GONE: View.VISIBLE}"
+                    app:layout_constraintBottom_toBottomOf="@+id/layout_item_lang_en_id"
+                    app:layout_constraintStart_toEndOf="@id/layout_item_lang_en_id"
+                    app:layout_constraintTop_toTopOf="@+id/layout_item_lang_en_id" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</layout>

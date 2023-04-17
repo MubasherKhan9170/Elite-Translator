@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="sourceTextVariable"
+            type="com.translate.translator.voice.translation.dictionary.all.language.viewmodels.TranslatorMainViewModel" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/editable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="180dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/offline_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#E5E5E5"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/textView2"
+                    app:layout_constraintEnd_toEndOf="@+id/textView2"
+                    app:layout_constraintStart_toStartOf="@+id/textView2"
+                    app:srcCompat="@drawable/ic_offline_state_icon" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_offline_state"
+                    android:textColor="#747474"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="English"
+                android:textColor="@color/primaryColor"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/message_input"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="@string/home_input_editor_hint"
+                android:imeOptions="normal"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:textAlignment="gravity"
+                android:textColorHint="@color/offColor"
+                android:textDirection="inherit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                />
+
+
+            <ImageView
+                android:id="@+id/clear_text_icon_id"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/message_input"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_close_white_icon"
+                app:tint="@color/secondaryLightColor" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="message_input,clear_text_icon_id"
+                app:layout_constraintBottom_toTopOf="@id/translation_button_id" />
+
+            <ImageView
+                android:id="@+id/camera_view_icon_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/microphone_view_icon_id"
+                app:layout_constraintEnd_toStartOf="@+id/microphone_view_icon_id"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/microphone_view_icon_id"
+                app:srcCompat="@drawable/ic_camera_black_icon" />
+
+            <ImageView
+                android:id="@+id/microphone_view_icon_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/speaker_icon_id"
+                app:layout_constraintEnd_toStartOf="@+id/speaker_icon_id"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/camera_view_icon_id"
+                app:layout_constraintTop_toTopOf="@+id/speaker_icon_id"
+                app:srcCompat="@drawable/ic_voice_black_icon" />
+
+            <ImageView
+                android:id="@+id/speaker_icon_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/translation_button_id"
+                app:layout_constraintEnd_toStartOf="@+id/translation_button_id"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/microphone_view_icon_id"
+                app:layout_constraintTop_toTopOf="@+id/translation_button_id"
+                app:srcCompat="@drawable/ic_voice_listen_black_icon" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/translation_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/home_input_editor_button_name"
+                app:elevation="4dp"
+                app:icon="@drawable/ic_search_black_icon"
+                app:iconGravity="textStart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/speaker_icon_id"
+                app:layout_constraintTop_toBottomOf="@+id/message_input"
+                app:layout_constraintVertical_bias="1.0"
+                app:layout_constraintHorizontal_weight="1"/>
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progressBar"
+                style="@style/Widget.MaterialComponents.CircularProgressIndicator.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/translation_button_id"
+                app:layout_constraintEnd_toEndOf="@+id/translation_button_id"
+                app:layout_constraintStart_toStartOf="@+id/translation_button_id"
+                app:layout_constraintTop_toTopOf="@+id/translation_button_id"
+                app:trackColor="@color/black_900" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

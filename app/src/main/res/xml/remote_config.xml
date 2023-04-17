@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<defaultsMap>
+    <entry>
+        <key>weekly</key>
+        <value>300</value>
+
+        <key>monthly</key>
+        <value>1200</value>
+
+        <key>n_months</key>
+        <value>12000</value>
+
+    </entry>
+
+
+</defaultsMap>

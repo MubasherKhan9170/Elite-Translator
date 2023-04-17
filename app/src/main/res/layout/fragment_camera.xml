@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="model"
+            type="com.translate.translator.voice.translation.dictionary.all.language.viewmodels.TranslatorMainViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment_camera_parent_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".voice.translation.learn.all.language.fragments.CameraFragment">
+
+        <!--left guideline of the screen-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/fragment_camera_left_guideline_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/element_margin_normal" />
+        <!--right guideline of the screen-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/fragment_camera_right_guideline_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/element_margin_normal" />
+        <!--include language switcher layout-->
+
+        <!--view group for camera preview and image viewer for cropping
+        and include translation result layout-->
+        <FrameLayout
+            android:id="@+id/fragment_camera_frame_layout_id"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/fragment_camera_capture_image_layout_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:context=".CameraFragment">
+
+
+            <androidx.camera.view.PreviewView
+                android:id="@+id/fragment_camera_preview_finder_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.camera.view.PreviewView>
+
+            <com.translate.translator.voice.translation.dictionary.all.language.view.CropImageView
+                android:id="@+id/fragment_camera_view_display_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/fragment_camera_language_switcher_layout_id"
+                layout="@layout/layout_language_switcher_card_view"
+                bind:switcherVariable = "@{model}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_normal"
+                android:layout_marginEnd="@dimen/spacing_normal" />
+
+            <include
+                android:id="@+id/fragment_camera_result_layout_id"
+                layout="@layout/layout_camera_result_fields"
+                bind:resultVariable = "@{model}"
+                android:visibility="gone" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progressBar"
+                style="@style/Widget.MaterialComponents.CircularProgressIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/translation_button_id"
+                app:layout_constraintEnd_toEndOf="@+id/translation_button_id"
+                app:layout_constraintStart_toStartOf="@+id/translation_button_id"
+                app:layout_constraintTop_toTopOf="@+id/translation_button_id"
+                 />
+
+
+
+
+        </FrameLayout>
+        <!--include camera capture action bar layout-->
+        <include
+            android:id="@+id/fragment_camera_capture_image_layout_id"
+            layout="@layout/layout_camera_action_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+        <!--include image scanning action bar layout for text recognition-->
+        <include
+            android:id="@+id/fragment_camera_scan_image_layout_id"
+            layout="@layout/layout_camera_scan_retake_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+        <!--include camera result finalize action bar layout-->
+        <include
+            android:id="@+id/fragment_camera_finalize_result_layout_id"
+            layout="@layout/layout_camera_finalize_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!--include pdf result finalize action bar layout-->
+        <include
+            android:id="@+id/fragment_pdf_finalize_result_layout_id"
+            layout="@layout/layout_pdf_finalize_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+
+

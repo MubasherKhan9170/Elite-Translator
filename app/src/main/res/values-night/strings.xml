@@ -1,0 +1,1678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Go Translate All Languages</string>
+
+    <!--String for splash activity-->
+    <string name="splash_title">ELITE <b>TRANSLATOR</b></string>
+    <string name="splash_button_text">Translate</string>
+    <string name="splash_privacy_policy"><b><u>Privacy Policy</u></b></string>
+    <string name="splash_term_of_service"><b><u>Term of service</u></b></string>
+    <string name="splash_icon_description">Translator app icon</string>
+
+    <!--String for premium activity-->
+    <string name="premium_title">ELITE <font fgcolor='#ffd301'><b>TRANSLATOR</b></font></string>
+    <string name="premium_label"><b>Upgrade to Premium</b></string>
+    <string name="Premium_close_icon_description">TODO</string>
+    <string name="text_translation_feature">Text Translator</string>
+    <string name="selected_feature_checked_mark">Feature for premium users</string>
+    <string name="voice_translation_feature">Voice Chat Translator</string>
+    <string name="pdf_scanner_feature">PDF File Scanner</string>
+    <string name="no_ads_feature">Get Rid Of Annoying Ads</string>
+    <string name="card_crown_ico">This icon represent premium user.</string>
+    <string name="card_title"><b>Buy Premium</b></string>
+    <string name="card_message_text">Go Premium and get access to all services</string>
+
+    <!--String for Main Activity-->
+    <!-- TODO: Default language strings -->
+    <string name="default_src_lang_name">English</string>
+    <string name="default_tar_lang_name">Urdu</string>
+    <string name="to">To</string>
+
+
+    <!-- TODO: String of Drawer Header  -->
+    <string name="drawer_header_premium">Get Premium</string>
+
+    <!-- TODO: String of Drawer Menu Items  -->
+    <string name="menu_item_lang_setting">App Language</string>
+    <string name="menu_item_remove_ad">Remove Ad</string>
+    <string name="menu_item_favourite">Favourite</string>
+    <string name="menu_item_history">History</string>
+    <string name="menu_item_feedback">Feedback</string>
+    <string name="menu_item_rate">Rate</string>
+    <string name="menu_item_share">share</string>
+    <string name="menu_item_privacy_policy">Privacy Policy</string>
+    <string name="menu_item_quit_app">Quit App</string>
+
+    <!-- TODO: String of Main Fragment within Activity  -->
+    <!--Title-->
+    <string name="home_title_name"><font>LANGUAGE <b>TRANSLATOR</b></font> </string>
+    <!--Tabs-->
+    <string name="tab_home">Home</string>
+    <string name="tab_chat">Chat</string>
+    <string name="tab_scan_pdf">Scan PDF</string>
+    <string name="tab_dictionary">Dictionary</string>
+    <string name="tab_screen_translation">Screen TR</string>
+
+    <!-- TODO: Toast messages-->
+    <string name="feature_unavailable_offline">This feature isn\'t available offline</string>
+    <string name="home_editor_empty_state">Text cannot be empty</string>
+    <string name="language_not_supported">This Language is not supported</string>
+    <string name="not_support_stt">Your device does not support Speech to Text.</string>
+    <string name="voice_internet_disconnect">You\'re internet connection becomes off.</string>
+    <string name="text_copy_label">Copied Text</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="unable_fetch_response">Didn\'t get any response against this word!</string>
+    <string name="no_performed_part_a">Couldn\'t do this operation. \nBecause</string>
+    <string name="no_performed_part_b">language is not supporting yet!</string>
+    <string name="thanks_msg_rating">Thanks for your feedback.</string>
+    <string name="not_find_app">\" unable to find market app\"</string>
+    <string name="no_text_found">No Text Found!</string>
+    <string name="pdf_generated">PDF file generated successfully.\n</string>
+    <string name="not_find_path">Unable to get the path of the sharing file</string>
+    <string name="translation_failed">Failed to translate, please retry.</string>
+    <string name="check_net_connectivity">Check your Internet connection, then retry.</string>
+    <string name="image_text_no_found">No Text Found in the Image, Please retry.</string>
+    <string name="lang_unselected">Unselect Language is</string>
+    <string name="lang_selected">Select Language is</string>
+
+    <!-- TODO: Permission Dialogs-->
+    <string name="premission_dialog_cancel_button">NOT NOW</string>
+    <string name="premission_dialog_continue_button">CONTINUE</string>
+    <string name="camera_premission_msg_one">To capture photos and videos, allow Elite Translator access to your camera.</string>
+    <string name="camera_premission_msg_second">To get the text via scan, allow Elite Translator access to your camera. Tap Setting > Permissions, and turn Camera on.</string>
+    <string name="premission_dialog_setting_button">SETTING</string>
+    <string name="storage_premission_msg_one">To show media, allow Elite Translator access to your device\'s photos, media, and files.</string>
+    <string name="storage_premission_msg_second">To show media, allow Elite Translator access to your device\'s photos, media, and files. Tap Setting > Permissions, and turn Storage on.</string>
+
+
+    <!-- TODO: String of Home Fragment within Main Fragment  -->
+    <string name="home_offline_state">You\'re offline</string>
+    <string name="home_input_editor_hint">Enter Text to Translate</string>
+    <string name="home_input_editor_button_name">Translate</string>
+
+
+    <!-- TODO: String of Voice Fragment within Main Fragment  -->
+    <string name="voice_clear_chat_button">clear all</string>
+    <string name="voice_empty_state_label">No Voice Conversation</string>
+
+    <!-- TODO: String of Scan Pdf Fragment within Main Fragment  -->
+    <string name="scan_pdf_gallery_button">Image From Gallery</string>
+    <string name="scan_pdf_camera_button">Image From Camera</string>
+
+    <!-- TODO: String of dictionary Fragment within Main Fragment  -->
+    <string name="search_editor_hint">Search</string>
+    <string name="search_dictionary_hint">Search english language words only</string>
+    <string name="search_field_empty">No Text in the search field.</string>
+
+    <!-- TODO: String of language selection Fragment within Main Activity  -->
+    <!--Title-->
+    <string name="language_selection_title">SELECT LANGUAGE</string>
+
+    <string name="selection_empty_state_label">No Item Match</string>
+    <string name="auto_state">Auto Detect Language</string>
+    <string name="recent">Recent Languages</string>
+    <string name="list_word_header">A</string>
+    <string name="auto_detected">Auto Detected</string>
+
+    <!-- TODO: String of favourite Fragment within Main Activity  -->
+    <!--Title-->
+    <string name="favourite_title">Favourite</string>
+    <string name="single_list_button">Single</string>
+    <string name="multi_list_button">Multi</string>
+    <string name="favourite_empty_state">No Item Found</string>
+
+    <!-- TODO: String of history Fragment within Main Activity  -->
+    <!--title-->
+    <string name="history_title">Translate History</string>
+
+    <string name="history_empty_state">No Item Found</string>
+
+    <!-- TODO: String of Rate Fragment within Main Activity  -->
+    <string name="rate_dialog_title">Rate Us</string>
+    <string name="dialog_msg">Did you Enjoy the app?</string>
+    <string name="dialog_closure_msg">If you like our app please take a moment and rate our app on play store!</string>
+
+    <!-- TODO: String of logout Fragment within Main Activity  -->
+    <string name="logout_dialog_title">Quit</string>
+    <string name="logout_dialog_msg">Do you want to Exit?</string>
+    <string name="logout_positive_button">Yes</string>
+    <string name="logout_cancel_button">No</string>
+
+    <!-- TODO: String of pdf generator Fragment within Main Activity  -->
+    <!--title-->
+    <string name="pdf_gen_title">PDF</string>
+    <string name="pdf_gene_translate_button">Translate</string>
+    <string name="pdf_gen_save_button">Save</string>
+    <string name="pdf_gen_share">Share</string>
+
+    <string name="pdf_generate_cancel_button">cancel</string>
+    <string name="pdf_generate_ok_button">ok</string>
+    <string name="pdf_generate_option_one">As Text</string>
+    <string name="pdf_generate_option_two">As PDF File</string>
+    <string name="enter_file_name">Enter the name</string>
+    <string name="pdf_generate_share_title">Share</string>
+
+    <!-- TODO: String of camera Fragment within Main Activity  -->
+    <string name="camera_title">Scan PDF</string>
+
+    <!-- TODO: String of gallery Fragment within Main Activity  -->
+    <string name="gallery_title">GALLERY</string>
+    <string name="gallery_empty_state">No Item Found</string>
+
+    <!-- TODO: String of service within Main Activity  -->
+    <string name="float_one_word_button">Tab to Select One</string>
+    <string name="float_all_screen_button">Select All</string>
+
+    <!-- TODO: String of App language Activity  -->
+    <!--Title-->
+    <string name="app_lang_Activity_title">Select App Language</string>
+
+
+    <!-- TODO: String of Multi Main Fragment within Multi Language Activity  -->
+    <!--Title-->
+    <string name="multi_main_fragment_title">Multi Translate All Languages</string>
+    <!--language add layout-->
+    <string name="layout_add_lang_title">Translation Language\'s</string>
+    <string name="layout_add_lang_empty_state">Please Add Translation Languages</string>
+
+    <!--loading layout-->
+    <string name="layout_loading_title">Total Characters :</string>
+    <string name="layout_loading_wait_msg">Translating text! Please wait...</string>
+
+    <!--pop up window-->
+    <string name="pop_up_skip_button">Skip</string>
+    <string name="pop_up_msg">Which language would you like to speak?</string>
+    <string name="pop_up_select_button">Select Language</string>
+
+
+    <!-- TODO: String of Multi add Fragment within Multi Language Activity  -->
+
+    <string name="multi_add_fragment_title">Add Languages</string>
+    <string name="multi_add_fragment_search_hint">Search</string>
+
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="save_as_pdf">Save As PDF</string>
+    <string name="screenCapture">To start the screen translation</string>
+
+
+
+
+    <string-array name="lang_array_display_name">
+        <item>Afrikaans</item>
+        <item>Albanian</item>
+        <item>Amharic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Armenian</item>
+        <item>Azerbaijani</item>
+        <item>Basque</item>
+        <item>Bengali </item>
+        <item>Bengali</item>
+        <item>Bosnian</item>
+        <item>Bulgarian</item>
+        <item>Burmese</item>
+        <item>Catalan</item>
+        <item>Chinese Traditional</item>
+        <item>Chinese Simplified</item>
+        <item>Chinese Traditional</item>
+        <item>Croatian</item>
+        <item>Czech</item>
+        <item>Danish</item>
+        <item>Dutch</item>
+        <item>Dutch</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English </item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>Estonian</item>
+        <item>Filipino</item>
+        <item>Finnish</item>
+        <item>French</item>
+        <item>French</item>
+        <item>French</item>
+        <item>French</item>
+        <item>Galician</item>
+        <item>Georgian</item>
+        <item>German</item>
+        <item>German</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Gujarati</item>
+        <item>Hebrew</item>
+        <item>Hindi</item>
+        <item>Hungarian</item>
+        <item>Icelandic</item>
+        <item>Indonesian</item>
+        <item>Italian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Javanese</item>
+        <item>Kannada</item>
+        <item>Kazakh</item>
+        <item>Khmer</item>
+        <item>Korean</item>
+        <item>Lao</item>
+        <item>Latvian</item>
+        <item>Lithuanian</item>
+        <item>Macedonian</item>
+        <item>Malay</item>
+        <item>Malayalam</item>
+        <item>Marathi</item>
+        <item>Mongolian</item>
+        <item>Nepali</item>
+        <item>Norwegian</item>
+        <item>Persian</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Portuguese</item>
+        <item>Punjabi</item>
+        <item>Romanian</item>
+        <item>Russian</item>
+        <item>Serbian</item>
+        <item>Sinhala</item>
+        <item>Slovak</item>
+        <item>Slovenian</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Sundanese</item>
+        <item>Swahili</item>
+        <item>Swahili</item>
+        <item>Swedish</item>
+        <item>Tamil</item>
+        <item>Tamil</item>
+        <item>Tamil</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Thai</item>
+        <item>Turkish</item>
+        <item>Ukrainian</item>
+        <item>Urdu</item>
+        <item>Urdu</item>
+        <item>Uzbek</item>
+        <item>Vietnamese</item>
+        <item>Zulu</item>
+
+    </string-array>
+    <string-array name="lang_array_show_country">
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>Algeria</item>
+        <item>Bahrain</item>
+        <item>Egypt</item>
+        <item>Iraq</item>
+        <item>Israel</item>
+        <item>Jordan</item>
+        <item>Kuwait</item>
+        <item>Lebanon</item>
+        <item>Morocco</item>
+        <item>Oman</item>
+        <item>Qatar</item>
+        <item>Saudi Arabia</item>
+        <item>Palestine</item>
+        <item>Tunisia</item>
+        <item>United Arab Emirates</item>
+        <item>Yemen</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>Bangladesh</item>
+        <item>India</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>Hong Kong</item>
+        <item>China</item>
+        <item>Taiwan</item>
+        <item>null </item>
+        <item>null</item>
+        <item>null</item>
+        <item>Belgium</item>
+        <item>Netherlands</item>
+        <item>Australia</item>
+        <item>Canada</item>
+        <item>Ghana</item>
+        <item>Hong Kong</item>
+        <item>India</item>
+        <item>Ireland</item>
+        <item>Kenya</item>
+        <item>New Zealand</item>
+        <item>Nigeria</item>
+        <item>Pakistan</item>
+        <item>Philippines</item>
+        <item>Singapore</item>
+        <item>South Africa</item>
+        South Africa
+        <item>Tanzania</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+        United States
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>Belgium</item>
+        <item>Canada</item>
+        <item>France</item>
+        <item>Switzerland</item>
+        <item>null</item>
+        <item>null</item>
+        <item>Austria</item>
+        <item>Germany</item>
+        <item>Switzerland</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>Italy</item>
+        <item>Switzerland</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>Brazil</item>
+        <item>Portugal</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>Bolivia</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Costa Rica</item>
+        <item>Dominican Republic</item>
+        <item>Ecuador</item>
+        <item>El Salvador</item>
+        <item>Guatemala</item>
+        <item>Honduras</item>
+        <item>Mexico</item>
+        <item>Nicaragua</item>
+        <item>Panama</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Puerto Rico</item>
+        <item>Spain</item>
+        <item>United States</item>
+        <item>Uruguay</item>
+        <item>Venezuela</item>
+        <item>null</item>
+        <item>Kenya</item>
+        <item>Tanzania</item>
+        <item>null</item>
+        <item>India</item>
+        <item>Malaysia</item>
+        <item>Singapore</item>
+        <item>Sri Lanka</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>India</item>
+        <item>Pakistan</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+
+    </string-array>
+
+
+    <string-array name="lang_array_name_en" translatable="false">
+        <item>Afrikaans</item>
+        <item>Albanian</item>
+        <item>Amharic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Arabic</item>
+        <item>Armenian</item>
+        <item>Azerbaijani</item>
+        <item>Basque</item>
+        <item>Bengali </item>
+        <item>Bengali</item>
+        <item>Bosnian</item>
+        <item>Bulgarian</item>
+        <item>Burmese</item>
+        <item>Catalan</item>
+        <item>Chinese Traditional</item>
+        <item>Chinese Simplified</item>
+        <item>Chinese Traditional</item>
+        <item>Croatian</item>
+        <item>Czech</item>
+        <item>Danish</item>
+        <item>Dutch</item>
+        <item>Dutch</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English </item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>Estonian</item>
+        <item>Filipino</item>
+        <item>Finnish</item>
+        <item>French</item>
+        <item>French</item>
+        <item>French</item>
+        <item>French</item>
+        <item>Galician</item>
+        <item>Georgian</item>
+        <item>German</item>
+        <item>German</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Gujarati</item>
+        <item>Hebrew</item>
+        <item>Hindi</item>
+        <item>Hungarian</item>
+        <item>Icelandic</item>
+        <item>Indonesian</item>
+        <item>Italian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Javanese</item>
+        <item>Kannada</item>
+        <item>Kazakh</item>
+        <item>Khmer</item>
+        <item>Korean</item>
+        <item>Lao</item>
+        <item>Latvian</item>
+        <item>Lithuanian</item>
+        <item>Macedonian</item>
+        <item>Malay</item>
+        <item>Malayalam</item>
+        <item>Marathi</item>
+        <item>Mongolian</item>
+        <item>Nepali</item>
+        <item>Norwegian</item>
+        <item>Persian</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Portuguese</item>
+        <item>Punjabi</item>
+        <item>Romanian</item>
+        <item>Russian</item>
+        <item>Serbian</item>
+        <item>Sinhala</item>
+        <item>Slovak</item>
+        <item>Slovenian</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Sundanese</item>
+        <item>Swahili</item>
+        <item>Swahili</item>
+        <item>Swedish</item>
+        <item>Tamil</item>
+        <item>Tamil</item>
+        <item>Tamil</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Thai</item>
+        <item>Turkish</item>
+        <item>Ukrainian</item>
+        <item>Urdu</item>
+        <item>Urdu</item>
+        <item>Uzbek</item>
+        <item>Vietnamese</item>
+        <item>Zulu</item>
+
+    </string-array>
+    <string-array name="lang_array_name_local" translatable="false">
+        <item>Afrikaans</item>
+        <item>Shqiptare</item>
+        <item>ኣማርኛ</item>
+        <item>العربية</item>
+        <item>العربية</item>
+        <item>العربية</item>
+        <item>العربية</item>
+        <item>العربية</item>
+        <item>العربية</item>
+        <item>العربية</item>
+        <item>العربية</item>
+        <item>العربية</item>
+        <item>العربية</item>
+        <item>العربية</item>
+        <item>العربية</item>
+        <item>العربية</item>
+        <item>العربية</item>
+        <item>العربية</item>
+        <item>العربية</item>
+        <item>Հայերեն</item>
+        <item>Azərbaycanca</item>
+        <item>Euskara</item>
+        <item>বাংলা</item>
+        <item>বাংলা</item>
+        <item>Bosanski</item>
+        <item>български език</item>
+        <item>ဗမာ</item>
+        <item>Català</item>
+        <item>中國傳統的</item>
+        <item>简体中文</item>
+        <item>中國傳統的</item>
+        <item>Hrvatski</item>
+        <item>Čeština</item>
+        <item>Dansk</item>
+        <item>Nederlands</item>
+        <item>Nederlands</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>Eesti</item>
+        <item>Pilipino</item>
+        <item>Suomi</item>
+        <item>Français</item>
+        <item>Français</item>
+        <item>Français</item>
+        <item>Français</item>
+        <item>Galego</item>
+        <item>ქართული</item>
+        <item>Deutsch</item>
+        <item>Deutsch</item>
+        <item>Deutsch</item>
+        <item>Ελληνικά</item>
+        <item>ગુજરાતી</item>
+        <item>עברית</item>
+        <item>हिन्दी</item>
+        <item>Magyar</item>
+        <item>Íslenska</item>
+        <item>Bahasa Indonesia</item>
+        <item>Italiano</item>
+        <item>Italiano</item>
+        <item>日本語</item>
+        <item>Wong jawa</item>
+        <item>ಕನ್ನಡ</item>
+        <item>Қазақ</item>
+        <item>ភាសាខ្មែរ</item>
+        <item>한국인</item>
+        <item>ພາສາລາວ</item>
+        <item>Latviešu</item>
+        <item>Lietuvių</item>
+        <item>Mакедонски</item>
+        <item>Melayu</item>
+        <item>മലയാളം</item>
+        <item>मराठी</item>
+        <item>Монгол</item>
+        <item>नेपाली</item>
+        <item>Norsk</item>
+        <item>فارسی</item>
+        <item>Polskie</item>
+        <item>Português</item>
+        <item>Português</item>
+        <item>ਪੰਜਾਬੀ</item>
+        <item>Română</item>
+        <item>Русский</item>
+        <item>Српски</item>
+        <item>සිංහල</item>
+        <item>Slovenčina</item>
+        <item>Slovenščina</item>
+        <item>Español</item>
+        <item>Español</item>
+        <item>Español</item>
+        <item>Español</item>
+        <item>Español</item>
+        <item>Español</item>
+        <item>Español</item>
+        <item>Español</item>
+        <item>Español</item>
+        <item>Español</item>
+        <item>Español</item>
+        <item>Español</item>
+        <item>Español</item>
+        <item>Español</item>
+        <item>Español</item>
+        <item>Español</item>
+        <item>Español</item>
+        <item>Español</item>
+        <item>Español</item>
+        <item>Español</item>
+        <item>Sundanis</item>
+        <item>Kiswahili</item>
+        <item>Kiswahili</item>
+        <item>Svenska</item>
+        <item>தமிழ்</item>
+        <item>தமிழ்</item>
+        <item>தமிழ்</item>
+        <item>தமிழ்</item>
+        <item>తెలుగు</item>
+        <item>ไทย</item>
+        <item>Türkçe</item>
+        <item>Українська</item>
+        <item>اردو</item>
+        <item>اردو</item>
+        <item>O\'zbek</item>
+        <item>Tiếng Việt</item>
+        <item>isiZulu</item>
+
+    </string-array>
+    <string-array name="lang_array_county_variant" translatable="false">
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>Algeria</item>
+        <item>Bahrain</item>
+        <item>Egypt</item>
+        <item>Iraq</item>
+        <item>Israel</item>
+        <item>Jordan</item>
+        <item>Kuwait</item>
+        <item>Lebanon</item>
+        <item>Morocco</item>
+        <item>Oman</item>
+        <item>Qatar</item>
+        <item>Saudi Arabia</item>
+        <item>Palestine</item>
+        <item>Tunisia</item>
+        <item>United Arab Emirates</item>
+        <item>Yemen</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>Bangladesh</item>
+        <item>India</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>Hong Kong</item>
+        <item>China</item>
+        <item>Taiwan</item>
+        <item>null </item>
+        <item>null</item>
+        <item>null</item>
+        <item>Belgium</item>
+        <item>Netherlands</item>
+        <item>Australia</item>
+        <item>Canada</item>
+        <item>Ghana</item>
+        <item>Hong Kong</item>
+        <item>India</item>
+        <item>Ireland</item>
+        <item>Kenya</item>
+        <item>New Zealand</item>
+        <item>Nigeria</item>
+        <item>Pakistan</item>
+        <item>Philippines</item>
+        <item>Singapore</item>
+        <item>South Africa</item>
+        South Africa
+        <item>Tanzania</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+        United States
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>Belgium</item>
+        <item>Canada</item>
+        <item>France</item>
+        <item>Switzerland</item>
+        <item>null</item>
+        <item>null</item>
+        <item>Austria</item>
+        <item>Germany</item>
+        <item>Switzerland</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>Italy</item>
+        <item>Switzerland</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>Brazil</item>
+        <item>Portugal</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>Bolivia</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Costa Rica</item>
+        <item>Dominican Republic</item>
+        <item>Ecuador</item>
+        <item>El Salvador</item>
+        <item>Guatemala</item>
+        <item>Honduras</item>
+        <item>Mexico</item>
+        <item>Nicaragua</item>
+        <item>Panama</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Puerto Rico</item>
+        <item>Spain</item>
+        <item>United States</item>
+        <item>Uruguay</item>
+        <item>Venezuela</item>
+        <item>null</item>
+        <item>Kenya</item>
+        <item>Tanzania</item>
+        <item>null</item>
+        <item>India</item>
+        <item>Malaysia</item>
+        <item>Singapore</item>
+        <item>Sri Lanka</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>India</item>
+        <item>Pakistan</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+
+    </string-array>
+    <string-array name="lang_array_country_code" translatable="false">
+        <item>ZA</item>
+        <item>AL</item>
+        <item>ET</item>
+        <item>DZ</item>
+        <item>BH</item>
+        <item>EG</item>
+        <item>IQ</item>
+        <item>IL</item>
+        <item>JO</item>
+        <item>KW</item>
+        <item>LB</item>
+        <item>MA</item>
+        <item>OM</item>
+        <item>QA</item>
+        <item>SA</item>
+        <item>PS</item>
+        <item>TN</item>
+        <item>AE</item>
+        <item>YE</item>
+        <item>AM</item>
+        <item>AZ</item>
+        <item>ES</item>
+        <item>BD</item>
+        <item>IN</item>
+        <item>BA</item>
+        <item>BG</item>
+        <item>MM</item>
+        <item>ES</item>
+        <item>CN</item>
+        <item>CN</item>
+        <item>CN</item>
+        <item>HR</item>
+        <item>CZ</item>
+        <item>DK</item>
+        <item>BE</item>
+        <item>NL</item>
+        <item>AU</item>
+        <item>CA</item>
+        <item>GH</item>
+        <item>HK</item>
+        <item>IN</item>
+        <item>IE</item>
+        <item>KE</item>
+        <item>NZ</item>
+        <item>NG</item>
+        <item>PK</item>
+        <item>PH</item>
+        <item>SG</item>
+        <item>ZA</item>
+        <item>TZ</item>
+        <item>GB</item>
+        <item>US</item>
+        <item>EE</item>
+        <item>PH</item>
+        <item>FI</item>
+        <item>BE</item>
+        <item>CA</item>
+        <item>FR</item>
+        <item>CH</item>
+        <item>ES</item>
+        <item>GE</item>
+        <item>AT</item>
+        <item>DE</item>
+        <item>CH</item>
+        <item>GR</item>
+        <item>IN</item>
+        <item>IL</item>
+        <item>IN</item>
+        <item>HU</item>
+        <item>IS</item>
+        <item>ID</item>
+        <item>IT</item>
+        <item>CH</item>
+        <item>JP</item>
+        <item>ID</item>
+        <item>IN</item>
+        <item>KZ</item>
+        <item>KH</item>
+        <item>KR</item>
+        <item>LA</item>
+        <item>LV</item>
+        <item>LT</item>
+        <item>MK</item>
+        <item>MY</item>
+        <item>IN</item>
+        <item>IN</item>
+        <item>MN</item>
+        <item>NP</item>
+        <item>NO</item>
+        <item>IR</item>
+        <item>PL</item>
+        <item>BR</item>
+        <item>PT</item>
+        <item>IN</item>
+        <item>RO</item>
+        <item>RU</item>
+        <item>RS</item>
+        <item>LK</item>
+        <item>SK</item>
+        <item>SI</item>
+        <item>ES</item>
+        <item>BO</item>
+        <item>CL</item>
+        <item>CO</item>
+        <item>CR</item>
+        <item>DO</item>
+        <item>EC</item>
+        <item>SV</item>
+        <item>GT</item>
+        <item>HN</item>
+        <item>MX</item>
+        <item>NI</item>
+        <item>PA</item>
+        <item>PY</item>
+        <item>PE</item>
+        <item>PR</item>
+        <item>ES</item>
+        <item>US</item>
+        <item>UY</item>
+        <item>VE</item>
+        <item>ID</item>
+        <item>KE</item>
+        <item>TJ</item>
+        <item>SE</item>
+        <item>IN</item>
+        <item>MY</item>
+        <item>SG</item>
+        <item>LK</item>
+        <item>IN</item>
+        <item>TH</item>
+        <item>TR</item>
+        <item>UA</item>
+        <item>IN</item>
+        <item>PK</item>
+        <item>UZ</item>
+        <item>VN</item>
+        <item>ZA</item>
+
+    </string-array>
+    <string-array name="lang_array_bcp_47_code" translatable="false">
+        <item>af-ZA</item>// South Africa
+        <item>sq-AL</item>
+        //Albania
+        <item>am-ET</item>
+        //Ethiopia
+        <item>ar-DZ</item>
+        Algeria
+        <item>ar-BH</item>
+        Bahrain
+        <item>ar-EG</item>
+        Egypt
+        <item>ar-IQ</item>
+        Iraq
+        <item>ar-IL</item>
+        Israel
+        <item>ar-JO</item>
+        Jordan
+        <item>ar-KW</item>
+        Kuwait
+        <item>ar-LB</item>
+        Lebanon
+        <item>ar-MA</item>
+        Morocco
+        <item>ar-OM</item>
+        Oman
+        <item>ar-QA</item>
+        Qatar
+        <item>ar-SA</item>
+        Saudi Arabia
+        <item>ar-PS</item>
+        Palestine
+        <item>ar-TN</item>
+        Tunisia
+        <item>ar-AE</item>
+        United Arab Emirates
+        <item>ar-YE</item>
+        Yemen
+        <item>hy-AM</item>
+        //Armenia
+        <item>az-AZ</item>
+        //Azerbaijan
+        <item>eu-ES</item>
+        //Spain
+        <item>bn-BD</item>
+        Bangladesh
+        <item>bn-IN</item>
+        India
+        <item>bs-BA</item>
+        //Bosnia and Herzegovina
+        <item>bg-BG</item>
+        //Bulgaria
+        <item>my-MM</item>
+        //Myanmar
+        <item>ca-ES</item>
+        //Spain
+        <item>yue-Hant-HK</item>
+        Hong Kong
+        <item>zh-CN</item>
+        China
+        <item>zh-TW</item>
+        Taiwan
+        <item>hr-HR </item>
+        //Croatia
+        <item>cs-CZ </item>
+        //Czech Republic
+        <item>da-DK</item>
+        //Denmark
+        <item>nl-BE</item>
+        Belgium
+        <item>nl-NL</item>
+        Netherlands
+        <item>en-AU</item>
+        Australia
+        <item>en-CA</item>
+        Canada
+        <item>en-GH</item>
+        Ghana
+        <item>en-HK</item>
+        Hong Kong
+        <item>en-IN</item>
+        India
+        <item>en-IE</item>
+        Ireland
+        <item>en-KE</item>
+        Kenya
+        <item>en-NZ</item>
+        New Zealand
+        <item>en-NG</item>
+        Nigeria
+        <item>en-PK</item>
+        Pakistan
+        <item>en-PH</item>
+        Philippines
+        <item>en-SG</item>
+        Singapore
+        <item>en-ZA</item>
+        South Africa
+        <item>en-TZ</item>
+        Tanzania
+        <item>en-GB</item>
+        United Kingdom
+        <item>en-US</item>
+        United States
+        <item>et-EE</item>
+        //Estonia
+        <item>fil-PH</item>
+        //Philippines
+        <item>fi-FI</item>
+        //Finland
+        <item>fr-BE</item>
+        Belgium
+        <item>fr-CA</item>
+        Canada
+        <item>fr-FR</item>
+        France
+        <item>fr-CH</item>
+        Switzerland
+        <item>gl-ES</item>
+        //Spain
+        <item>ka-GE</item>
+        //Georgia
+        <item>de-AT</item>
+        Austria
+        <item>de-DE</item>
+        Germany
+        <item>de-CH</item>
+        Switzerland
+        <item>el-GR</item>
+        //Greece
+        <item>gu-IN</item>
+        //India
+        <item>iw-IL</item>
+        //Israel
+        <item>hi-IN</item>
+        //India
+        <item>hu-HU</item>
+        //Hungary
+        <item>is-IS</item>
+        //Iceland
+        <item>id-ID</item>
+        //Indonesia
+        <item>it-IT</item>
+        Italy
+        <item>it-CH</item>
+        Switzerland
+        <item>ja-JP</item>
+        //Japan
+        <item>jv-ID</item>
+        //Indonesia
+        <item>kn-IN</item>
+        //India
+        <item>kk-KZ</item>
+        //Kazakhstan
+        <item>km-KH</item>
+        //Cambodia
+        <item>ko-KR</item>
+        //South Korea
+        <item>lo-LA</item>//Laos
+        <item>lv-LV</item>
+        //Latvia
+        <item>lt-LT</item>
+        //Lithuania
+        <item>mk-MK</item>
+        //North Macedonia
+        <item>ms-MY</item>
+        //Malaysia
+        <item>ml-IN</item>
+        //India
+        <item>mr-IN</item>//India
+        <item>mn-MN</item>
+        //Mongolia
+        <item>ne-NP</item>
+        //Nepal
+        <item>no-NO</item>
+        //Norway
+        <item>fa-IR</item>//Iran
+        <item>pl-PL</item>
+        //Poland
+        <item>pt-BR</item>
+        Brazil
+        <item>pt-PT</item>
+        Portugal
+        <item>pa-Guru-IN</item>
+        //India
+        <item>ro-RO</item>//Romania
+        <item>ru-RU</item>
+        //Russia
+        <item>sr-RS</item>
+        //Serbia
+        <item>si-LK</item>
+        //Sri Lanka
+        <item>sk-SK</item>
+        //Slovakia
+        <item>sl-SI</item>
+        //Slovenia
+        <item>es-AR</item>
+        //Spanish
+        <item>es-BO</item>
+        Bolivia
+        <item>es-CL</item>
+        Chile
+        <item>es-CO</item>
+        Colombia
+        <item>es-CR</item>
+        Costa Rica
+        <item>es-DO</item>
+        Dominican Republic
+        <item>es-EC</item>
+        Ecuador
+        <item>es-SV</item>
+        El Salvador
+        <item>es-GT</item>
+        Guatemala
+        <item>es-HN</item>
+        Honduras
+        <item>es-MX</item>
+        Mexico
+        <item>es-NI</item>
+        Nicaragua
+        <item>es-PA</item>
+        Panama
+        <item>es-PY</item>
+        Paraguay
+        <item>es-PE</item>
+        Peru
+        <item>es-PR</item>
+        Puerto Rico
+        <item>es-ES</item>
+        Spain
+        <item>es-US</item>
+        United States
+        <item>es-UY</item>
+        Uruguay
+        <item>es-VE</item>
+        Venezuela
+        <item>su-ID</item>
+        //Indonesia
+        <item>sw-KE</item>
+        Kenya
+        <item>sw-TZ</item>
+        Tanzania
+        <item>sv-SE</item>
+        //Sweden
+        <item>ta-IN</item>
+        India
+        <item>ta-MY</item>
+        Malaysia
+        <item>ta-SG</item>
+        Singapore
+        <item>ta-LK</item>
+        Sri Lanka
+        <item>te-IN</item>
+        //India
+        <item>th-TH</item>// Thailand
+        <item>tr-TR</item>
+        //Turkey
+        <item>uk-UA</item>
+        //Ukraine
+        <item>ur-IN</item>
+        India
+        <item>ur-PK</item>
+        Pakistan
+        <item>uz-UZ</item>
+        //Uzbekistan
+        <item>vi-VN</item>
+        //Vietnam
+        <item>zu-ZA</item>
+        //South Africa
+
+    </string-array>
+    <string-array name="lang_array_iso_3_code" translatable="false">
+        <item>af</item>// South Africa
+        <item>sq</item>
+        //Albania
+        <item>am</item>
+        //Ethiopia
+        <item>ar</item>
+        Algeria
+        <item>ar</item>
+        Bahrain
+        <item>ar</item>
+        Egypt
+        <item>ar</item>
+        Iraq
+        <item>ar</item>
+        Israel
+        <item>ar</item>
+        Jordan
+        <item>ar</item>
+        Kuwait
+        <item>ar</item>
+        Lebanon
+        <item>ar</item>
+        Morocco
+        <item>ar</item>
+        Oman
+        <item>ar</item>
+        Qatar
+        <item>ar</item>
+        Saudi Arabia
+        <item>ar</item>
+        Palestine
+        <item>ar</item>
+        Tunisia
+        <item>ar</item>
+        United Arab Emirates
+        <item>ar</item>
+        Yemen
+        <item>hy</item>
+        //Armenia
+        <item>az</item>
+        //Azerbaijan
+        <item>eu</item>
+        //Spain
+        <item>bn</item>
+        Bangladesh
+        <item>bn</item>
+        India
+        <item>bs</item>
+        //Bosnia and Herzegovina
+        <item>bg</item>
+        //Bulgaria
+        <item>my</item>
+        //Myanmar
+        <item>ca</item>
+        //Spain
+        <item>zh</item>
+        Hong Kong
+        <item>zh</item>
+        China
+        <item>zh</item>
+        Taiwan
+        <item>hr</item>
+        //Croatia
+        <item>cs</item>
+        //Czech Republic
+        <item>da</item>
+        //Denmark
+        <item>nl</item>
+        Belgium
+        <item>nl</item>
+        Netherlands
+        <item>en</item>
+        Australia
+        <item>en</item>
+        Canada
+        <item>en</item>
+        Ghana
+        <item>en</item>
+        Hong Kong
+        <item>en</item>
+        India
+        <item>en</item>
+        Ireland
+        <item>en</item>
+        Kenya
+        <item>en</item>
+        New Zealand
+        <item>en</item>
+        Nigeria
+        <item>en</item>
+        Pakistan
+        <item>en</item>
+        Philippines
+        <item>en</item>
+        Singapore
+        <item>en</item>
+        South Africa
+        <item>en</item>
+        Tanzania
+        <item>en</item>
+        United Kingdom
+        <item>en</item>
+        United States
+        <item>et</item>
+        //Estonia
+        <item>fil</item>
+        //Philippines
+        <item>fi</item>
+        //Finland
+        <item>fr</item>
+        Belgium
+        <item>fr</item>
+        Canada
+        <item>fr</item>
+        France
+        <item>fr</item>
+        Switzerland
+        <item>gl</item>
+        //Spain
+        <item>ka</item>
+        //Georgia
+        <item>de</item>
+        Austria
+        <item>de</item>
+        Germany
+        <item>de</item>
+        Switzerland
+        <item>el</item>
+        //Greece
+        <item>gu</item>
+        //India
+        <item>iw</item>
+        //Israel
+        <item>hi</item>
+        //India
+        <item>hu</item>
+        //Hungary
+        <item>is</item>
+        //Iceland
+        <item>id</item>
+        //Indonesia
+        <item>it</item>
+        Italy
+        <item>it</item>
+        Switzerland
+        <item>ja</item>
+        //Japan
+        <item>jv</item>
+        //Indonesia
+        <item>kn</item>
+        //India
+        <item>kk</item>
+        //Kazakhstan
+        <item>km</item>
+        //Cambodia
+        <item>ko</item>
+        //South Korea
+        <item>lo</item>//Laos
+        <item>lv</item>
+        //Latvia
+        <item>lt</item>
+        //Lithuania
+        <item>mk</item>
+        //North Macedonia
+        <item>ms</item>
+        //Malaysia
+        <item>ml</item>
+        //India
+        <item>mr</item>//India
+        <item>mn</item>
+        //Mongolia
+        <item>ne</item>
+        //Nepal
+        <item>no</item>
+        //Norway
+        <item>fa</item>//Iran
+        <item>pl</item>
+        //Poland
+        <item>pt</item>
+        Brazil
+        <item>pt</item>
+        Portugal
+        <item>pa</item>
+        //India
+        <item>ro</item>//Romania
+        <item>ru</item>
+        //Russia
+        <item>sr</item>
+        //Serbia
+        <item>si</item>
+        //Sri Lanka
+        <item>sk</item>
+        //Slovakia
+        <item>sl</item>
+        //Slovenia
+        <item>es</item>
+        //Spanish
+        <item>es</item>
+        Bolivia
+        <item>es</item>
+        Chile
+        <item>es</item>
+        Colombia
+        <item>es</item>
+        Costa Rica
+        <item>es</item>
+        Dominican Republic
+        <item>es</item>
+        Ecuador
+        <item>es</item>
+        El Salvador
+        <item>es</item>
+        Guatemala
+        <item>es</item>
+        Honduras
+        <item>es</item>
+        Mexico
+        <item>es</item>
+        Nicaragua
+        <item>es</item>
+        Panama
+        <item>es</item>
+        Paraguay
+        <item>es</item>
+        Peru
+        <item>es</item>
+        Puerto Rico
+        <item>es</item>
+        Spain
+        <item>es</item>
+        United States
+        <item>es</item>
+        Uruguay
+        <item>es</item>
+        Venezuela
+        <item>su</item>
+        //Indonesia
+        <item>sw</item>
+        Kenya
+        <item>sw</item>
+        Tanzania
+        <item>sv</item>
+        //Sweden
+        <item>ta</item>
+        India
+        <item>ta</item>
+        Malaysia
+        <item>ta</item>
+        Singapore
+        <item>ta</item>
+        Sri Lanka
+        <item>te</item>
+        //India
+        <item>th</item>// Thailand
+        <item>tr</item>
+        //Turkey
+        <item>uk</item>
+        //Ukraine
+        <item>ur</item>
+        India
+        <item>ur</item>
+        Pakistan
+        <item>uz</item>
+        //Uzbekistan
+        <item>vi</item>
+        //Vietnam
+        <item>zu</item>
+        //South Africa
+
+    </string-array>
+
+    <!--Camera Text Recognition languages List-->
+    <string-array name="camera_lang_array_name_en" translatable="false">
+        <item>Afrikaans</item>
+        <item>Albanian</item>
+        <item>Catalan</item>
+        <item>Croatian</item>
+        <item>Czech</item>
+        <item>Danish</item>
+        <item>Dutch</item>
+        <item>Dutch</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English </item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>English</item>
+        <item>Estonian</item>
+        <item>Filipino</item>
+        <item>Finnish</item>
+        <item>French</item>
+        <item>French</item>
+        <item>French</item>
+        <item>French</item>
+        <item>German</item>
+        <item>German</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Hungarian</item>
+        <item>Icelandic</item>
+        <item>Indonesian</item>
+        <item>Italian</item>
+        <item>Italian</item>
+        <item>Latvian</item>
+        <item>Lithuanian</item>
+        <item>Malay</item>
+        <item>Norwegian</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Portuguese</item>
+        <item>Romanian</item>
+        <item>Serbian</item>
+        <item>Slovak</item>
+        <item>Slovenian</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Spanish</item>
+        <item>Swedish</item>
+        <item>Turkish</item>
+        <item>Vietnamese</item>
+    </string-array>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+</resources>

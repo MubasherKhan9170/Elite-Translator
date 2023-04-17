@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="model"
+            type="com.translate.translator.voice.translation.dictionary.all.language.viewmodels.TranslatorMainViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".voice.translation.learn.all.language.fragments.GalleryFragment">
+
+        <TextView
+            android:id="@+id/empty_state_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gallery_empty_state"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/empty_state_view_id"
+            app:layout_constraintStart_toStartOf="@+id/empty_state_view_id"
+            app:layout_constraintTop_toBottomOf="@+id/empty_state_view_id" />
+
+        <ImageView
+            android:id="@+id/empty_state_view_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_empty_state_img"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+<!--        <Button
+            android:id="@+id/reload_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/element_margin_normal"
+            android:text="Reload"
+            app:layout_constraintEnd_toEndOf="@+id/empty_state_view_id"
+            app:layout_constraintStart_toStartOf="@+id/empty_state_view_id"
+            app:layout_constraintTop_toBottomOf="@+id/empty_state_text_id" />-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/gallery_view_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintDimensionRatio="1:1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

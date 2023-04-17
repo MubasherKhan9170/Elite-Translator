@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/black_background_text"
+        tools:context=".AppLanguageActivity">
+
+        <!-- TODO: Update blank fragment layout -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lang_left_guideline_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/element_margin_normal" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lang_right_guideline_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/element_margin_normal" />
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:theme="@style/Theme.MyTestApplication.AppBarOverlay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:navigationIcon="@drawable/ic_up_back_button_icon"
+                app:navigationIconTint="@color/white"
+                app:title="@string/app_lang_Activity_title"
+                app:titleCentered="true"
+                app:titleTextColor="@color/white" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+<!--
+        <include
+            android:id="@+id/search_widget_layout_id"
+            layout="@layout/layout_search_widget"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/fragment_app_lang_recycler_view_id"
+            app:layout_constraintEnd_toStartOf="@+id/lang_right_guideline_id"
+            app:layout_constraintStart_toStartOf="@+id/lang_left_guideline_id"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout2" />
+-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_app_lang_recycler_view_id"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+
+            android:layout_marginBottom="@dimen/spacing_normal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/lang_right_guideline_id"
+            app:layout_constraintStart_toStartOf="@+id/lang_left_guideline_id"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+
+
